@@ -1,0 +1,8 @@
+extends _layout
+block body
+    p= data
+    p= JSON.stringify(data)
+    p it's
+    p #{data.name} #{data.surname}
+    a(href='/') go back
+    p sysdata: #{JSON.stringify(data.query)}

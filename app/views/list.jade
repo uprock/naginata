@@ -1,0 +1,6 @@
+extends _layout
+block body
+    p= JSON.stringify(locals)
+    -for (var i = 0; i < data.length; i++)
+        p id: #{i}
+        a(href='/user') #{data[i].name} #{data[i].surname}
